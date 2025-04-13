@@ -1,0 +1,35 @@
+extends common/layout
+
+block content
+  // Top Navigation Bar
+  nav.navbar.navbar-expand-lg.navbar-light.fixed-top
+    .container-fluid
+      a.navbar-brand(href='#') Abhishek Notepad App
+  
+  // Main Content Container (with space for the fixed navbar)
+  .container-fluid.pt-5.mt-3
+    .row
+      // Left Sidebar
+      .col-md-3.col-lg-2.sidebar
+        .d-grid.gap-2.mb-4
+          button.btn.btn-primary.btn-lg.mb-3(type='button') New Note
+        
+        // Placeholder for Note List
+        .list-group.mb-4
+          .list-group-item.list-group-item-action.disabled List of Notes will appear here
+        
+        .d-grid.gap-2.mt-auto
+          button.btn.btn-danger.btn-lg(type='button') Delete Note
+      
+      // Main Content Area (Right)
+      .col-md-9.col-lg-10.ps-md-4
+        .note-content-area.p-3
+          // Title Input
+          input.form-control.note-title-input(type='text', placeholder='Title')
+          
+          // Content Textarea
+          textarea.form-control.note-content-textarea(placeholder='Write your note here...')
+          
+          // Save Button
+          .d-grid.gap-2.d-md-flex.justify-content-md-end.mt-3
+            button.btn.btn-success(type='button') Save

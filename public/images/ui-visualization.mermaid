@@ -1,0 +1,27 @@
+graph TD
+    subgraph Layout
+    A[VS Code Notepad] --> B[Navbar]
+    A --> C[Main Content]
+    
+    C --> D[Sidebar]
+    C --> E[Note Editor]
+    
+    D --> F[New Note Button]
+    D --> G[Note List Area]
+    D --> H[Delete Note Button]
+    
+    E --> I[Title Input]
+    E --> J[Content Textarea]
+    E --> K[Save Button]
+    end
+    
+    subgraph Bootstrap Components
+    L[container-fluid]
+    M[row]
+    N[col-md-3 col-lg-2]
+    O[col-md-9 col-lg-10]
+    P[form-control]
+    Q[btn btn-primary]
+    R[btn btn-danger]
+    S[btn btn-success]
+    end

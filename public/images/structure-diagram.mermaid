@@ -1,0 +1,27 @@
+graph TD
+    A[VS Code Notepad App] --> B[Frontend - Stage 1]
+    A --> C[Backend - Future Stage]
+    
+    B --> D[UI Components]
+    B --> E[Styling]
+    
+    D --> D1[Navbar]
+    D --> D2[Sidebar]
+    D --> D3[Main Content Area]
+    
+    D2 --> D2a[New Note Button]
+    D2 --> D2b[Note List Area]
+    D2 --> D2c[Delete Note Button]
+    
+    D3 --> D3a[Title Input]
+    D3 --> D3b[Content Textarea]
+    D3 --> D3c[Save Button]
+    
+    E --> E1[Bootstrap]
+    E --> E2[Custom CSS]
+    E2 --> E2a[Light Theme]
+    E2 --> E2b[Dark Theme]
+    
+    C --> F[Express Routes]
+    C --> G[Data Storage]
+    C --> H[Note CRUD Operations]
